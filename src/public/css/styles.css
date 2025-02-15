@@ -1,0 +1,56 @@
+@import url(./site.css);
+
+/* Header & Footer */
+.header-section,
+.footer-section {
+    padding: 35px 0 38px;
+    background-color: #74C69D;
+}
+
+.header-section {
+    margin-bottom: 30px;
+}
+
+.header-section-content,
+.footer-section-container {
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header */
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 190px;
+}
+
+.logo {
+    font-size: 2.5rem;
+}
+
+.nav-container {
+    width: 390px;
+}
+
+.nav-container ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-media ul {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media ul li i {
+    color: var(--white-color);
+}
