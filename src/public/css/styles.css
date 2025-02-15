@@ -19,6 +19,15 @@
     align-items: center;
 }
 
+.social-media ul {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media ul li i {
+    color: var(--white-color);
+}
+
 /* Header */
 .logo-container {
     display: flex;
@@ -46,11 +55,29 @@
     color: inherit;
 }
 
-.social-media ul {
+/* main */
+.portfolio-header-section {
     display: flex;
-    gap: 15px;
+    justify-content: center;
+    margin-bottom: 82px;
 }
 
-.social-media ul li i {
-    color: var(--white-color);
+.section-header {
+    text-align: center;
+    width: 410px;
 }
+
+/* portfolio section */
+.portfolio-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 570fr 555fr;
+    margin-bottom: 64px;
+    gap: 55px;
+}
+
+.more-section {
+    text-align: center;
+    margin-bottom: 100px;
+}
+

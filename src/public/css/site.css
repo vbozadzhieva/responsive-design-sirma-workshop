@@ -57,3 +57,28 @@ h1 {
     font-size: 1.25rem;
     line-height: 125%;
 }
+
+/* Buttons */
+.primary-button,
+.secondary-button {
+    padding: 13px 30px 10px;
+    font-family: inherit;
+    border-radius: 5px;
+    border: 0;
+    min-width: 170px;
+}
+
+.primary-button {
+    background-color: var(--white-color);
+    color: black;
+}
+
+.secondary-button {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+
+img {
+    width: 100%;
+}
+
