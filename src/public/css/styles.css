@@ -64,7 +64,7 @@
 }
 
 .welcome-container {
-    width: 415px;
+    max-width: 415px;
 }
 
 .welcome-container .label {
@@ -85,7 +85,7 @@
 
 .section-header {
     text-align: center;
-    width: 410px;
+    max-width: 410px;
 }
 
 /* partner section */
@@ -98,7 +98,8 @@
 }
 
 .partner-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: 68px;
 }
 
@@ -111,7 +112,7 @@
 }
 
 .info-section-content {
-    width: 470px;
+    max-width: 470px;
 }
 
 .info-section-content p {
@@ -144,7 +145,7 @@
 }
 
 .talents-list-item {
-    padding: 20px 40px;
+    padding: 20px 25px;
     box-shadow: 3px 4px 12px 1px var(--dark-color-25);
     border-radius: 5px;
 }
@@ -189,11 +190,26 @@
     .site-content {
         width: 900px;
     }
+
+    .talents-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
 }
 
 @media (max-width: 1024px) {
     .site-content {
         width: 700px;
+    }
+
+    .partner-container {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 68px;
+        row-gap: 40px;
+    }
+
+    .info-section {
+        gap: 55px;
     }
 }
 
@@ -202,14 +218,13 @@
         width: 500px;
     }
 
-    /* Switch navigation to burger menu */
+    /* switch navigation to burger menu */
     .header-section-content nav {
         display: none;
     }
 
     .burger-menu {
         display: inline;
-        width: 50px;
     }
 
     .logo-container {
@@ -222,6 +237,29 @@
 
     .logo {
         font-size: 1.9rem;
+    }
+
+    .welcome-section {
+        flex-direction: column-reverse;
+        gap: 30px;
+        padding-bottom: 20px;
+    }
+
+    .partner-container {
+        padding: 0;
+    }
+
+    .info-section {
+        flex-direction: column;
+    }
+
+    .solution-info-section {
+        margin-bottom: 40px;
+    }
+
+    .talents-list {
+        grid-template-columns: 1fr;
+        gap: 35px;
     }
 
     .portfolio-header-section {
@@ -249,8 +287,20 @@
         width: 320px;
     }
 
-    /* lower article container width */
-    article {
+    .welcome-section {
+        padding-bottom: 0;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .partner-container {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+
+    .portfolio-section article {
         width: 320px;
     }
 
