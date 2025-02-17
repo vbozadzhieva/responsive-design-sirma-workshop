@@ -119,6 +119,34 @@
     gap: 68px;
 }
 
+/* info section */
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 110px;
+}
+
+.info-section-content {
+    width: 470px;
+}
+
+.info-section-content p {
+    color: var(--dark-color-50);
+    margin-bottom: 16px;
+}
+
+.mission-info-section {
+    margin-bottom: 75px;
+}
+
+.solution-info-section {
+    flex-direction: row-reverse;
+    margin-bottom: 110px;
+}
+
+
+
 /* media queries */
 
 @media (max-width: 1200px) {
