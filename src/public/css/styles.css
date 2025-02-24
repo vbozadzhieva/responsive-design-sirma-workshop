@@ -41,7 +41,7 @@
     font-size: 2.5rem;
 }
 
-.burger-menu {
+.burger-menu-wrapper {
     display: none;
 }
 
@@ -241,8 +241,11 @@
         font-size: 2em;
     }
 
-    .burger-menu {
-        display: inline;
+    .burger-menu-wrapper {
+        display: block;
+        background-image: url('/public/img/burger-menu.svg');
+        width: 35px;
+        height: 36px;
     }
 
     .logo-container {
