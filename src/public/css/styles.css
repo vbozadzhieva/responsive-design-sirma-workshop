@@ -15,6 +15,7 @@
 .footer-section-container {
     color: var(--white-color);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -219,8 +220,25 @@
     }
 
     /* switch navigation to burger menu */
-    .header-section-content nav {
+    /* .nav-container {
         display: none;
+    } */
+
+    .nav-container ul {
+        flex-direction: column;
+    }
+
+    .nav-container li:not(li:first-child) {
+        padding-top: 15px;
+    }
+
+    .nav-container li:not(li:last-child) {
+        border-bottom: 1px solid var(--white-color-75);
+        padding-bottom: 15px;
+    }
+
+    .nav-container a {
+        font-size: 2em;
     }
 
     .burger-menu {
