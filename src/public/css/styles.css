@@ -41,8 +41,18 @@
     font-size: 2.5rem;
 }
 
-.burger-menu-wrapper {
+.burger-menu {
     display: none;
+    width: 35px;
+    height: 36px;
+}
+
+.open-menu {
+    background-image: url('/public/img/burger-menu.svg');
+}
+
+.close-menu {
+    background-image: url('/public/img/close.svg');
 }
 
 .nav-container {
@@ -209,6 +219,10 @@
         row-gap: 40px;
     }
 
+    .nav-container {
+        display: block;
+    }
+
     .info-section {
         gap: 55px;
     }
@@ -220,9 +234,9 @@
     }
 
     /* switch navigation to burger menu */
-    /* .nav-container {
+    .nav-container {
         display: none;
-    } */
+    }
 
     .nav-container ul {
         flex-direction: column;
@@ -241,11 +255,8 @@
         font-size: 2em;
     }
 
-    .burger-menu-wrapper {
+    .burger-menu {
         display: block;
-        background-image: url('/public/img/burger-menu.svg');
-        width: 35px;
-        height: 36px;
     }
 
     .logo-container {
